@@ -5,81 +5,279 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Shoes shop</title>
   </head>
   <body>
     <main id="app">
-      <header id="navigation">
+      <header>
         <nav>
-          <ul>
-            <li id="logo-li">
+          <ul id="navigation-template">
+            <li id="logo-li" style="font-size: 0px">
+              Home
               <a>
-                <img onclick="navigate('home')" src="./img/logo.png" />
+                <img src="./img/logo.png" />
               </a>
             </li>
             <li>
-              <a href="/">Home</a>
+              <a>Home</a>
             </li>
             <li>
-              <a href="/">Gallery</a>
+              <a>Contact</a>
             </li>
             <li>
-              <a href="/">Catalog</a>
+              <a>Gallery</a>
             </li>
             <li>
-              <a href="/">Info</a>
+              <a>Catalog</a>
             </li>
             <li>
-              <a href="/">About us</a>
+              <a>Info</a>
+            </li>
+            <li>
+              <a>About us</a>
             </li>
           </ul>
         </nav>
+        <div class="container" id="header-template">
+          <div class="about-us">
+            <div>
+              <img src="./img/shoes.jpg" alt="" />
+              <img src="./img/shoes2.jpg" alt="" />
+            </div>
+            <p>
+              Сайт, състоящ се от различни страници, може да има много красив
+              дизайн, интересно и добре организирано съдържание.За да се внесе в
+              него интерактивност, да се направи способен да реагира на
+              действията на потребителя, за да може да събира и обработва
+              някаква информация от посетителите на сайта, е невъзможно без
+              използването на програми (уеб-разработчиците, скриптове).Само с
+              помощта на скриптовете е възможно да се добави в сайта гласуване,
+              форма за обратна връзка и много други полезни неща, затова без уеб
+              програмиране няма как да се направи един качествен сайт. Всички
+              скриптове могат да се разделят на две групи: тези, които работят
+              на страната на сървъра ( на компютъра, на който е разположен самия
+              сайт) и на страната на клиента на компютъра на ползвателя, който
+              разглежда сайта.Скриптовете, работещи на страната на клиента,
+              позволяват да се реагира на действията на потребителя, когато той
+              преглежда вече качената информация в паметта на своя компютър на
+              страницата, да променя нейния вид и съдържание, без да е
+              необходимо отново да я качва в сървъра. Въпреки, че в началото на
+              появата и развитието на интернета вече е имало голямо количество
+              популярни и развити езици на програмиране, програмирането за
+              интернета е имало своята специфика. От една страна, са били нужни
+              нови функции, опростяващи работата, а от друга се изисквало
+              специално да се ограничи функционалността на средствата за
+              програмиране.
+            </p>
+          </div>
+        </div>
       </header>
 
-      <div class="container" id="about-us">
-        <div class="about-us">
-          <div>
-            <img src="./img/shoes.jpg" alt="" />
-            <img src="./img/shoes2.jpg" alt="" />
-          </div>
-          <p>
-            Сайт, състоящ се от различни страници, може да има много красив
-            дизайн, интересно и добре организирано съдържание.За да се внесе в
-            него интерактивност, да се направи способен да реагира на действията
-            на потребителя, за да може да събира и обработва някаква информация
-            от посетителите на сайта, е невъзможно без използването на програми
-            (уеб-разработчиците, скриптове).Само с помощта на скриптовете е
-            възможно да се добави в сайта гласуване, форма за обратна връзка и
-            много други полезни неща, затова без уеб програмиране няма как да се
-            направи един качествен сайт. Всички скриптове могат да се разделят
-            на две групи: тези, които работят на страната на сървъра ( на
-            компютъра, на който е разположен самия сайт) и на страната на
-            клиента на компютъра на ползвателя, който разглежда
-            сайта.Скриптовете, работещи на страната на клиента, позволяват да се
-            реагира на действията на потребителя, когато той преглежда вече
-            качената информация в паметта на своя компютър на страницата, да
-            променя нейния вид и съдържание, без да е необходимо отново да я
-            качва в сървъра. Въпреки, че в началото на появата и развитието на
-            интернета вече е имало голямо количество популярни и развити езици
-            на програмиране, програмирането за интернета е имало своята
-            специфика. От една страна, са били нужни нови функции, опростяващи
-            работата, а от друга се изисквало специално да се ограничи
-            функционалността на средствата за програмиране.
-          </p>
-        </div>
-      </div>
-
-      <div class="shoes" id="catalog">
+      <div class="shoes" id="catalog-template" style="display: none">
         <div class="shoe">
           <img src="./img/high-heels.webp" />
           <h3>Високи токчета</h3>
           <a>Цена: 189.99 BGN</a>
         </div>
+
+        <div class="shoe">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&w=1000&q=80"
+          />
+          <h3>Ред найк</h3>
+          <a>Цена: 389.99 BGN</a>
+        </div>
+
+        <div class="shoe">
+          <img
+            src="https://thumbs.dreamstime.com/b/vintage-red-shoes-23151148.jpg"
+          />
+          <h3>Кецове червени и бели</h3>
+          <a>Цена: 49.99 BGN</a>
+        </div>
+
+        <div class="shoe">
+          <img
+            src="https://static01.nyt.com/images/2022/03/17/us/08xpsatan-shoe/merlin_186039729_cdb846bf-dc3f-49cf-8552-e3992140338b-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+          />
+          <h3>Nike air - спортни</h3>
+          <a>Цена: 189.99 BGN</a>
+        </div>
+
+        <div class="shoe">
+          <img
+            src="https://cdn.anscommerce.com/live/image/catalog/brandstore/regal/loafersshoes.jpg"
+          />
+          <h3>Loafers</h3>
+          <a>Цена: 989.99 BGN</a>
+        </div>
+
+        <div class="shoe">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0046/9139/4658/files/SS22_TURING00_1800x1200_crop_center.jpg?v=1645280490"
+          />
+          <h3>Турска изработка обувки</h3>
+          <a>Цена: 589.99 BGN</a>
+        </div>
+      </div>
+
+      <div id="gallery-template" style="display: none">
+        <div class="w3-container" style="padding: 128px 16px">
+          <div
+            id="modal01"
+            class="w3-modal w3-black"
+            onclick="this.style.display='none'"
+          >
+            <span
+              class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+              title="Close Modal Image"
+              >×</span
+            >
+            <div
+              class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+            >
+              <img id="img01" class="w3-image" />
+              <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+          </div>
+
+          <h3 class="w3-center">Галерия</h3>
+          <p class="w3-center w3-large">Нашите магазини из страната -></p>
+
+          <div class="w3-row-padding" style="margin-top: 64px">
+            <div class="w3-col 13 m6">
+              <img
+                src="http://retaildesignblog.net/wp-content/uploads/2012/05/Camper-shoe-store-by-Nendo-Osaka.jpg"
+                style="width: 100%"
+                onclick="onClick(this)"
+                class="w3-hover-opacity"
+              />
+            </div>
+            <div class="w3-col 13 m6">
+              <img
+                src="https://thumbs.dreamstime.com/z/shoe-store-milan-23489263.jpg"
+                style="width: 100%"
+                onclick="onClick(this)"
+                class="w3-hover-opacity"
+              />
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col 13 m6">
+              <img
+                src="https://bestinau.com.au/wp-content/uploads/2019/07/Full-grain-leather-shoes.jpg"
+                style="width: 100%"
+                onclick="onClick(this)"
+                class="w3-hover-opacity"
+              />
+            </div>
+
+            <div class="w3-col 13 m6">
+              <img
+                src="http://4.bp.blogspot.com/-7lELhhOcLKA/UGMNHnWRh4I/AAAAAAAAAuU/GA5jjmSwuQM/s1600/43.shoes+stores.jpg"
+                style="width: 100%"
+                onclick="onClick(this)"
+                class="w3-hover-opacity"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="info-template" style="margin: 200px; display: none">
+        <h1>Eтапи при преход към онлайн магазин</h1>
+
+        <p>
+          За да изготвим работещ бизнес план, трябва или да се доверим на
+          собствените си умения, или да се доверим на тези на някой друг. В
+          случая е най-важно да знаем какво искаме от бъдещия си онлайн магазин
+          и готови ли сме за офлайн търговия изобщо. Правилното изработване на
+          платформа е само малка част от всичко, за което трябва да се погрижим,
+          преди да стартираме с продажбите. Етапите на проектиране са следните:
+          <br />
+          - Намиране и стиковане на нужната информация, която да бъде изложена в
+          бъдещия онлайн магазин;
+          <br />
+          - Правилно планиране на всеки един наш ход;
+          <br />
+          - Развиване на идеите с помощта на иновативни тънкости, които ще
+          придадат и индивидуалност на нашия онлайн магазин;
+
+          <br />
+          - Разработка и тестване на всички функционалности;
+          <br />
+          - Πoзpoбeтao и тĸcтвoнĸ нo вcичaи фyнaциeнoлнecти;
+
+          <br />
+          - Поддръжка.
+          <br />
+        </p>
+        <h2>Изпратете запитване за оферта според изискванията си</h2>
+        <p>
+          Всеки съвременен предприемач има своя собствена визия за успешна
+          търговия със стоки или услуги. Изпратете запитване за оферта и се
+          позовете на експертното мнение на специалистите. Грабнете
+          най-подходящия план според Вашите цели и нужди. Винаги може да
+          надграждате след време, ако не Ви достигат ресурси.
+        </p>
+
+        <h2>Подберете най-важните за вас функционалности</h2>
+        <p>
+          Простотата е прелюдия към съвършенството. Не е казано, че изработката
+          на Ваши интернет платформа трябва да е свързана с многобройни
+          функционалности, които да утежняват цялостната визия. По-основните са:
+          <br />
+          - Лесно навигиране в сайта;
+          <br />
+          - Интуитивен дизайн;
+          <br />
+          - Възможност за разпределение на вътрешните връзки;
+          <br />
+          - Бутон за линк;
+          <br />
+          - Бутон “Добави в количка”;
+          <br />
+          - Възможност за бърза поръчка;
+          <br />
+          - Повече информация/детайли за продукта; - Връзки към социални мрежи и
+          др.
+          <br />
+        </p>
+        <img
+          src="https://w-seo.com/wp-content/uploads/2021/01/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B5%D1%82%D0%B0%D0%BF%D0%B8-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%81%D0%B0%D0%B9%D1%82.jpg"
+          alt="shema na magazin"
+          style="width: 100%"
+        />
+      </div>
+
+      <div id="contact-template">
+        <div class="form">
+          <h2>Name</h2>
+          <input type="text" name="name" >
+          <h2>Message</h2>
+          <input type="text" name="message" id="message-id">
+
+          <div class="wrap">
+            <button class="button">Submit</button>
+          </div>
+        </div>
       </div>
 
       <footer>
-        <p><a href="/home">Software University</a> - JS Applications @ 2020</p>
+        <p><a>Сайта е изготвен от </a>Габриела Стоянова @ 2022</p>
       </footer>
     </main>
+    <script src="./router.js" defer></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>
