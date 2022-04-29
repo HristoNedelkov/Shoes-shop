@@ -20,7 +20,7 @@ let paths = {
   gallery: document.querySelector("#gallery-template"),
    contact: document.querySelector("#contact-template"),
      info: document.querySelector("#info-template"),
-  // "about me": document.querySelector("#about-template"),
+    "about us": document.querySelector("#about-template"),
 };
 const navigation = Array.from(
   document.querySelector("#navigation-template").children
